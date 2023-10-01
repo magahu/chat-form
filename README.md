@@ -4,7 +4,7 @@ This project is builded in React + TypesScript + Vite.
 
 ## Configuration
 
-Clone this repository, run nmp i and run the development server. Navigate to you localhost and see the app.
+Clone this repository, run nmp to run the development server. Navigate to you localhost and see the app.
 
 
 ## Some views of this app
