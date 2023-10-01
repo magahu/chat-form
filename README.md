@@ -14,11 +14,11 @@ Clone this repository, run nmp i and run the development server. Navigate to you
 
 - Count five minutes by clik on the button "Empezar!"
 
-![Chat-form page](https://github.com/magahu/chat-form/blob/main/readme_screenshots/ScreenShot-2.png "Chat-form")
+![Chat-form page](https://github.com/magahu/chat-form/blob/main/readme-screenshots/ScreenShot-2.png "Chat-form")
 
 - The forms are really basic
 
-![Chat-form page](https://github.com/magahu/chat-form/blob/main/readme_screenshots/ScreenShot-3.png "Chat-form")
+![Chat-form page](https://github.com/magahu/chat-form/blob/main/readme-screenshots/ScreenShot-3.png "Chat-form")
 
 - Enter your data and get a single answer!
   
