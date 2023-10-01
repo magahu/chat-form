@@ -1,27 +1,24 @@
-# React + TypeScript + Vite
+## Chat-Form app
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is builded in React + TypesScript + Vite.
 
-Currently, two official plugins are available:
+## Configuration
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Clone this repository, run nmp i and run the development server. Navigate to you localhost and see the app.
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Some views of this app
 
-- Configure the top-level `parserOptions` property like this:
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+![Chat-form page](readme_screenshots/ScreenShot-1 "Chat-form")
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- Count five minutes by clik on the button "Empezar!"
+
+![Chat-form page](readme_screenshots/ScreenShot-2 "Chat-form")
+
+- The forms are really basic
+
+![Chat-form page](readme_screenshots/ScreenShot-3 "Chat-form")
+
+- Enter your data and get a single answer!
+  
