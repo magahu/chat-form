@@ -10,7 +10,7 @@ Clone this repository, run nmp i and run the development server. Navigate to you
 ## Some views of this app
 
 
-![Chat-form page](src/readme_screenshots/ScreenShot-1.png "Chat-form")
+![Chat-form page](https://github.com/magahu/chat-form/blob/main/readme-screenshots/ScreenShot-1.png "Chat-form")
 
 - Count five minutes by clik on the button "Empezar!"
 
