@@ -1,20 +1,10 @@
-//import { useState } from 'react'
-
-import './App.css'
-import { BasicFormContainer } from './chat-form/components/FormsContainer'
-import { Header } from './chat-form/components/Header'
-
+import "./App.css";
+import { ChatFormScreen } from "./chat-form/components/aplication/ChatFormScreen";
 
 function App() {
-  const formTitle = 'FORMULARIO'
-
   return (
-    <>
-    <Header title={formTitle}/>
-    <BasicFormContainer/>
-    {/*<BasicFormContainer subForms={myQuestions}/>*/}
-    </>
-  )
+      <ChatFormScreen />
+  );
 }
 
-export default App
+export default App;

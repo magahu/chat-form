@@ -25,16 +25,16 @@ function BirthdayForm() {
     dispatch(setBirthdayDataForm(filteredBirthdayForm))
   };
   const messageComponent = <Fragment>
-    <h2>Guardamos tu fecha de nacimiento!</h2>
-    {birthdayFormReduxState.day ? <h2>Día: {birthdayFormReduxState.day}</h2>: ''} 
-    {birthdayFormReduxState.month ? <h2>Mes: {birthdayFormReduxState.month}</h2>: ''}
-    {birthdayFormReduxState.year ? <h2>Año: {birthdayFormReduxState.year}</h2>:''}
+    <p>Guardamos tu fecha de nacimiento!</p>
+    {birthdayFormReduxState.day ? <p>Día: <b>{birthdayFormReduxState.day}</b></p>: ''} 
+    {birthdayFormReduxState.month ? <p>Mes: <b>{birthdayFormReduxState.month}</b></p>: ''}
+    {birthdayFormReduxState.year ? <p>Año: <b>{birthdayFormReduxState.year}</b></p>:''}
   </Fragment>
   return (
     <Fragment>
       <Form>
         <Form.Group>
-          <Form.Label>¿Cual es tu fecha de nacimiento?</Form.Label>
+          <Form.Label ><b>¿Cual es tu fecha de nacimiento?</b></Form.Label>
           <Form.Control
             type="text"
             name="day"
@@ -54,14 +54,14 @@ function BirthdayForm() {
             onChange={handleInputOnChange}
           />
         </Form.Group>
-        <Button onClick={OnSaveForm}>Guardar</Button>
+        <Button onClick={OnSaveForm} className="w-100 btn btn-lg mt-4 mb-4">Guardar</Button>
       </Form>
       {birthdayFormReduxState.day != "" ||
       birthdayFormReduxState.month != "" ||
       birthdayFormReduxState.year? (
         <ChatPromp
           message={messageComponent}
-          icon={<FaBirthdayCake />}
+          icon={<FaBirthdayCake size='20'/>}
         />
       ) : (
         ""

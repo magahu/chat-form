@@ -56,7 +56,5 @@ export const {
   setBirthdayDataForm,
   setContactDataForm,
 } = ChatFormSlice.actions
-//checar
-//export const selectNameForm = (state: RootState) => state.chatForm
 
 export default ChatFormSlice.reducer

@@ -19,8 +19,6 @@ function ContactForm() {
 
   const handleInputOnChange = (event: AnyAction) => {
     console.log(event.target.value);
-    // eslint-disable-next-line no-debugger
-    debugger;
     setContactFormState({
       ...contactFormState,
       [event.target.name]: event.target.value,
@@ -36,14 +34,14 @@ function ContactForm() {
 
   const messageComponent = (
     <Fragment>
-      <h2>Los datos de contacto que has ingresado son los siguientes:</h2>
+      <p>Los datos de contacto que has ingresado son los siguientes:</p>
       {contactFormReduxState.email ? (
-        <h2>Email: {contactFormReduxState.email}</h2>
+        <p>Email: <b>{contactFormReduxState.email}</b></p>
       ) : (
         ""
       )}
       {contactFormReduxState.cellPhone ? (
-        <h2>Teléfono celular: {contactFormReduxState.cellPhone}</h2>
+        <p>Teléfono celular: <b>{contactFormReduxState.cellPhone}</b></p>
       ) : (
         ""
       )}
@@ -54,7 +52,7 @@ function ContactForm() {
     <Fragment>
       <Form>
         <Form.Group>
-          <Form.Label>Datos de contacto</Form.Label>
+          <Form.Label><b>Datos de contacto</b></Form.Label>
           <Form.Control
             type="text"
             name="email"
@@ -68,14 +66,14 @@ function ContactForm() {
             onChange={handleInputOnChange}
           />
         </Form.Group>
-        <Button onClick={OnSaveForm}>Guardar</Button>
+        <Button className="w-100 btn btn-lg mt-4 mb-4" onClick={OnSaveForm}>Guardar</Button>
       </Form>
 
       {contactFormReduxState.email != "" ||
       contactFormReduxState.cellPhone != "" ? (
         <ChatPromp
           message={messageComponent}
-          icon={<LuContact />}
+          icon={<LuContact size='20'/>}
         />
       ) : (
         ""

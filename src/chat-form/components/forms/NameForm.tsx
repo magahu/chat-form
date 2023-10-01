@@ -20,8 +20,6 @@ function NameForm() {
 
   const handleInputOnChange = (event: AnyAction) => {
     console.log(event.target.value);
-    // eslint-disable-next-line no-debugger
-    debugger;
     setNameFormState({
       ...nameFormState,
       [event.target.name]: event.target.value,
@@ -38,9 +36,9 @@ function NameForm() {
     dispatch(setNameForm(filteredNameForm));
   };
   const messageComponent = <Fragment>
-   {nameFormReduxState.name? <h2>Hola {nameFormReduxState.name}!</h2> : <h2>Por favor ingresa tu nombre</h2>}
-    <h2>El nombre que has guardado:</h2>
-    <h2>{nameFormReduxState.name? nameFormReduxState.name : ''}  {nameFormReduxState.middleName? nameFormReduxState.middleName : ''} {nameFormReduxState.lastName? nameFormReduxState.lastName : ''} {nameFormReduxState.surname? nameFormReduxState.surname : ''}</h2>
+   {nameFormReduxState.name? <p>Hola {nameFormReduxState.name}!</p> : <p>Por favor ingresa tu nombre</p>}
+    <p>El contacto que has guardado: <b>{nameFormReduxState.name? nameFormReduxState.name : ''}  {nameFormReduxState.middleName? nameFormReduxState.middleName : ''} {nameFormReduxState.lastName? nameFormReduxState.lastName : ''} {nameFormReduxState.surname? nameFormReduxState.surname : ''}</b></p>
+    
 </Fragment>
     
   
@@ -48,7 +46,7 @@ function NameForm() {
     <Fragment>
       <Form>
         <Form.Group>
-          <Form.Label>Cuál es tu nombre?</Form.Label>
+          <Form.Label><b>Cuál es tu nombre?</b></Form.Label>
           <Form.Control
             type="text"
             name="name"
@@ -74,17 +72,15 @@ function NameForm() {
             onChange={handleInputOnChange}
           />
         </Form.Group>
-        <Button onClick={OnSaveForm}>Guardar</Button>
+        <Button onClick={OnSaveForm} className="w-100 btn btn-lg mt-4 mb-4">Guardar</Button>
       </Form>
-      <h6>estado: {nameFormState.name}</h6>
-      <h6>estado REDUX: {nameFormReduxState.name}</h6>
       {nameFormReduxState.name != "" ||
       nameFormReduxState.middleName != "" || 
       nameFormReduxState.lastName != "" ||
       nameFormReduxState.surname != ""? (
         <ChatPromp
           message={messageComponent}
-          icon={<FaUserCheck />}
+          icon={<FaUserCheck size='20'/>}
         />
       ) : (
         ""
