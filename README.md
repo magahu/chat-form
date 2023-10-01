@@ -10,15 +10,15 @@ Clone this repository, run nmp i and run the development server. Navigate to you
 ## Some views of this app
 
 
-![Chat-form page](readme_screenshots/ScreenShot-1.png "Chat-form")
+![Chat-form page](src/assets/readme_screenshots/ScreenShot-1.png "Chat-form")
 
 - Count five minutes by clik on the button "Empezar!"
 
-![Chat-form page](readme_screenshots/ScreenShot-2.png "Chat-form")
+![Chat-form page](src/assets/readme_screenshots/ScreenShot-2.png "Chat-form")
 
 - The forms are really basic
 
-![Chat-form page](readme_screenshots/ScreenShot-3.png "Chat-form")
+![Chat-form page](src/assets/readme_screenshots/ScreenShot-3.png "Chat-form")
 
 - Enter your data and get a single answer!
   
